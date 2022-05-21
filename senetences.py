@@ -1,13 +1,20 @@
 import random
 
-def maina():
 
 
 
-def get_determiner():
+def get_determiner(quantity):
+    words = ["the", "a", "one", "some", "many"]
 
+    if quantity == 1:
+          words = ["a", "one", "the"]
+    else:
+        words = ["two", "some", "many", "the"]
+    word = random.choice(words)
+    return word
 
 def get_noun():
+
 
 def get_verb():
 
