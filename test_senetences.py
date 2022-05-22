@@ -1,8 +1,11 @@
-from senetences
+from senetences import get_determiner, get_noun, get_verbs
+import random 
+import pytest
 
-test_get_determiner
 
+def test_get_determiner():
+    determ = get_determiner(1)
 
-test_get_noun
+    words = ["a", "one", "the"]
+    assert determ in words
 
-test_get_verbs
