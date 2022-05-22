@@ -1,4 +1,4 @@
-from senetences import get_determiner, get_noun, get_verbs
+from senetences import get_determiner
 import random 
 import pytest
 
