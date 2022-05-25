@@ -18,3 +18,25 @@ def get_determiner(quantity):
 
 
 
+
+
+
+
+
+
+
+
+
+
+def get_preposition():
+
+
+
+
+
+
+
+
+
+def get_prepositional_phrase(quantity):
+
