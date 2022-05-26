@@ -1,5 +1,5 @@
 import random
-
+verbs = []
 
 
 
@@ -27,6 +27,21 @@ def get_noun(quantity):
 
 def get_verb(quantity, tense):
 
+    if tense is == "past":
+        verbs.append("drank", "ate", "grew", "laughed", "thought",
+         "ran", "slept", "talked", "walked", "wrote")
+
+    elif tense is == "present" and quantity = 1:
+        verbs.append("drinks", "eats", "grows", "laughs", "thinks",
+        "runs", "sleeps", "talks", "walks", "writes")
+
+    elif tense is == "present" and quantity != 1:
+        
+
+    else if tense == "future":
+
+        
+        
 
 
 
