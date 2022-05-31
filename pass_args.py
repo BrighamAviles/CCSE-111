@@ -5,7 +5,7 @@ and lists are passed to a function by reference.
 
 def main():
     print("main()")
-    x = 5
+    x = 6
     lx = [7, -2]
     print(f"    Before calling modify_args(): x {x}  lx {lx}")
 
