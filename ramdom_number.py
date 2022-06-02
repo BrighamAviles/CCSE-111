@@ -11,8 +11,8 @@ def main():
 
     append_random_numbers(numbers)
 
-    print(number)
-    append_random_numbers(number, 3)
+    print(numbers)
+    append_random_numbers(numbers, 3)
 
     print(numbers)
 
