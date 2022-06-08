@@ -236,6 +236,8 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
         # Add the product into the total molar mass.
 
     # Return the total molar mass.
+    return
+    
     total_mass=0
     for x in symbol_quantity_list:
 
