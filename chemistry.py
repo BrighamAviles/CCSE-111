@@ -1,6 +1,6 @@
 
 
-def main ():
+def main():
     periodic_table_dict = {
 
         "Ac":    ["Actinium",	227],
@@ -238,7 +238,7 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     # Return the total molar mass.
     return
     
-    total_mass=0
+    total_mass = 0
     for x in symbol_quantity_list:
 
 
