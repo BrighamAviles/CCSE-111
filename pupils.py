@@ -8,6 +8,29 @@ SURNAME_INDEX = 1
 BIRTHDATE_INDEX = 2
 
 
+def main():
+    try:
+        # Read the pupils.csv file into a compound list.
+        students_list = read_compound_list("pupils.csv")
+
+        # As a debugging aid, print the students_list.
+        #print(students_list)
+
+        # Define a lambda function that extracts a student's birthdate.
+        extract_birthdate = lambda student: student[BIRTHDATE_INDEX]
+
+        # Call the Python built-in sorted function to sort
+        # the list of students by their birthdate and pass
+        # the lambda function to the sorted function.
+        sorted_list = sorted(students_list, key=extract_birthdate)
+
+        # Call the print_list function to print the sorted list.
+        print_list(sorted_list)
+
+    except (FileNotFoundError, PermissionError) as error:
+        print(type(error).__name__, error, sep=": ")
+
+
 def read_compound_list(filename):
     """Read the text from a CSV file into a compound list.
     The compound list will contain small lists. Each small
@@ -39,3 +62,24 @@ def read_compound_list(filename):
             compound_list.append(row)
 
     return compound_list
+
+
+def print_list(compound_list):
+    """Print the elements in a compound list to
+    the terminal window for the user to see.
+
+    Parameter
+        compound_list: a list that contains other lists
+    Return: nothing
+    """
+    for element in compound_list:
+        print(element)
+    print()
+
+
+# If this file is executed like this:
+# > python teach_solution.py
+# then call the main function. However, if this file is simply
+# imported (e.g. into a test file), then skip the call to main.
+if __name__ == "__main__":
+    main()
